@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio terminal</title>
+  <script src="script.js" type="text/javascript" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+      <div class="header"> bash - Martin Cabrera's Portfolio</div>
+      <div class="terminal" id="terminalWindow" >
+        <section id="terminal">
+          <div class="command">Successful login - <span class="error" id="date"></span></div>
+          <div class="title">Personal Portfolio</div>
+          Welcome to my portfolio, to list all available commands, type <span class="command">help</span> and press enter <br>
+        </section>
+        <div class="prompt">
+            <span class="title">guestuser@guestuser</span><span class="command">:~$</span><input id="promptInput"/>
+        </div>
+      </div>
+    </main>
+    <div class="hidden" id="promptClone">
+       <span class="title">guestuser@guestuser</span><span class="command"> :~$ </span><span class="promptCloneInput"></span>
+      <div class="promptCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Listing all available commands: </div>
+      <div class="indent">
+        <div>
+          <span class="command">whois</span>:
+          <div class="indent">Brief description about me</div> 
+        </div>
+        <div>
+          <span class="command">connect</span>:
+          <div class="indent">You can contact me here</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Tools of the trade which i mostly use for working or making projects</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">All about my educational formation</div> 
+        </div>
+        <div>
+          <span class="command">experience</span>:
+          <div class="indent">My working experience</div> 
+        </div>
+        <div>
+          <span class="command">projects</span>:
+          <div class="indent">A list of the projects i've been working on</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Clears the terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">Projects: </div>
+      <div class="indent">
+        <span class="title">Small geolocation app </span> - <a href="https://github.com/noicht/smallgeoip" target="_blank"><span style="color: darkviolet;" class="command">Click me!</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">CRUD made in C</span> - <a href="https://github.com/noicht/tps_laboratorio1" target="_blank"><span style="color: darkviolet;" class="command">Click me!</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">REST API</span> - <a href="https://github.com/noicht/REST-API_template" target="_blank"><span style="color: darkviolet;" class="command">Click me!</span> </a>
+      </div>
+    </div>
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Skills: </div>
+      <div class="indent">
+        <div>
+          <span class="command">Programming / Frameworks</span>:
+          <div class="indent">
+            <span class="title">JS</span>
+            <span class="title">CSS</span>
+            <span class="title">HTML</span>
+            <span class="title">Node.JS</span>
+            <span class="title">Python</span>
+            <span class="title">C</span>
+            <span class="title">Bash</span>
+            <span class="title">React.JS</span>
+            <span class="title">Express</span>
+            
+          </div> 
+        </div>
+        <div>
+          <span class="command">Databases</span>:
+          <div class="indent">
+            <span class="title">MongoDB</span>
+            <span class="title">MySQL</span>
+          </div> 
+        </div>
+        <div>
+          <span class="command">Languages</span>:
+          <div class="indent">
+            <span class="title">Spanish</span>
+            <span class="title">English</span>
+            <span class="title">Portuguese (basic)</span>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="whois">
+      <div class="sectionTitle">About me: </div>
+        <div class="indent">
+          <div class="command">Name:  Martin Cabrera</div>
+          <div class="command">Age:  24</div>
+          <div class="command">Occupation:  Software developer</div>
+          <div class="command">Likes:  Good music, books, programming, tinkering with electronics</div>
+          <div class="command">Dislikes:  Lemon pie, sleeping less than 8 hours</div>
+          <div class="command">Goals:  Become a better professional, learn everything that comes to my hands, start my own business</div>
+          <div class="command">At the present time:  I'm learning Go, AWS and docker</div>
+        </div> 
+    </div>
+
+    <div class="hidden" id="experience">
+      <div class="sectionTitle">Experience: </div>
+      <div class="indent">
+        <span class="title">Back-end Developer - Nodus Company</span> - <span class="command">February 2021 - Today</span>
+        <div class="indent">
+            Collaborated with the Testing/QA team in developing web scrapers and automated tests using Python, Selenium and Playwright
+        </div> 
+        <div class="indent">
+            Worked with a team of 3 Back-end developers in developing and maintaining APIs using Node.JS with Express
+        </div>
+        <div class="indent">
+            Helped with integration tasks such as connecting the Back-end with the user interface (Front-end)
+        </div>
+
+      </div>
+      <div class="indent">
+        <span class="title">Front-end Developer - Nodus Company</span> - <span class="command">July 2021 - February 2021</span>
+        <div class="indent">
+            Worked developing UIs for many projects such as Issue Colors, ICBC and Google SIMS using React.JS and Vanilla Javascript
+        </div> 
+      </div>
+    </div>
+
+    <div class="hidden" id="connect">
+      <div class="sectionTitle">Contact me: </div>
+      <div class="indent">
+        <span class="title">Github</span> - <span class="command"><a style="color: darkviolet" href="https://github.com/noicht">Click me!</a></span>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn</span> - <span class="command"><a style="color: darkviolet" href="https://www.linkedin.com/in/martin-cabrera-11051998/">Click me!</a></span>
+      </div>
+      <div class="indent">
+        <span class="title">Email</span> - <span class="command"><a style="color: darkviolet" href="mailto:mcabreracaz@gmail.com">Click me!</a> or mcabreracaz@gmail.com if you want to copy/paste it :)</span>
+      </div>
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Education: </div>
+      <div class="indent">
+        <span class="title">Bachelor in Computer Science - Universidad Tecnologica Nacional</span> <span class="command">Started in 2020 - Finished in 2022</span>
+        <div class="indent">
+          Did my first steps into programming with C, Haskell and Python languages. I've also learned about databases and embedded systems
+        </div> 
+      </div>
+      </div>
+    </div>
+</body>
+</html>
